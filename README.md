@@ -14,6 +14,12 @@ Then
   * open `spec/suite.html` in your brower to run the tests.
   * open `public/index.html` in your brower to run the application.
 
+You can see a running implementation at
+
+  * [The Application](http://dav.iboard.cc/container/cancoffee/public/)
+  * [The Jasime Suite](http://dav.iboard.cc/container/cancoffee/spec/suite.html)
+
+
 # The Application
 
 ## index.html
