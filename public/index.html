@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>HTML5 Canvas Application written with Coffeescript</title>
+
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+
+    <!-- include dependencies here ... -->
+    <script type="text/javascript" src="../public/vendor/jquery-2.1.0.min.js"></script>
+
+  </head>
+  <body>
+    <!-- define the canvas element -->
+    <canvas id='main-canvas' style='z-index: 0; position: fixed;'></canvas>
+
+    <!-- define html-elements used by the application -->
+    <div id='html-elements'  style='z-index: 1; position: fixed; display: none; width: 100%;'>
+      <div style='width: 50%; margin-left: auto; margin-right: auto; margin-top: 10%; color: white;'>
+        <h1>HTML5 Canvas Example</h1>
+        <p>Select the number of lines to draw...</p>
+        <select id="number-of-lines" style='z-index: 1; position: fixed;'>
+          <option value=0>--select number of lines--</option>
+          <option value=10>Draw 10 lines</option>
+          <option value=100>Draw 100 lines</option>
+          <option value=1000>Draw 1000 lines</option>
+          <option value=10000>Draw 10000 lines</option>
+          <option value=100000>Draw 100000 lines</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- include source files here... -->
+    <script type="text/javascript" src="../public/assets/helpers/application_helper.js"></script>
+    <script type="text/javascript" src="../public/assets/app/canvas_app.js"></script>
+    <script type="text/javascript" src="../public/assets/app/geometry.js"></script>
+    <script type="text/javascript" src="../public/assets/app/canvas.js"></script>
+    <script type="text/javascript" src="../public/assets/app/background.js"></script>
+    <script type="text/javascript" src="../public/assets/app/lines.js"></script>
+    <script type="text/javascript" src="../public/assets/app/line_draw_actor.js"></script>
+
+    <!-- Instantiate the application -->
+    <script>app = new CanvasApp( "main-canvas" )</script>
+  </body>
+</html>
