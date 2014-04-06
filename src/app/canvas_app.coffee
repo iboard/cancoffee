@@ -1,5 +1,13 @@
+# The global application object
 application = null
 
+#
+# The Application
+#
+# Usage:
+#   application = new CanvasApp( "canvas-html-element-id" )
+#   application.run()
+#
 class @CanvasApp
 
   # Create an actor for the application which responds to execute()
@@ -32,7 +40,6 @@ class @CanvasApp
 
   setupHTMLElements: ->
     ($ "#html-elements").fadeIn(200)
-
 
   run: ->
     @background.draw(@canvas.context)

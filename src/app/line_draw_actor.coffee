@@ -1,3 +1,9 @@
+#
+#  A demo-actor which draws a punch of random lines
+#  measures the time it takes to calculate random coordinates and
+#  drawing the lines. At the end it updates HTML-inputs with the
+#  measured times.
+#
 class @LineDrawActor
 
   constructor: (@canvas, @geometry) ->
@@ -32,8 +38,8 @@ class @LineDrawActor
     ($ "#time-total").val( @totalTime() )
 
   timeSpentInRandomizer: -> @generatingLinesFinishedAt -  @generatingLinesStartedAt
-  timeSpentForDrawing: -> @drawingFinishedAt - @drawingStartedAt
-  totalTime: -> @finishedAt - @startedAt
+  timeSpentForDrawing:   -> @drawingFinishedAt - @drawingStartedAt
+  totalTime:             -> @finishedAt - @startedAt
 
 
 
