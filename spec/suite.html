@@ -34,11 +34,18 @@
 
 <body>
 <canvas style='display: none' id='main-canvas'></canvas>
-<select id="number-of-lines">
-  <option value=10>Draw 10 lines</option>
-  <option value=100>Draw 100 lines</option>
-  <option value=1000>Draw 1000 lines</option>
-  <option value=10000>Draw 10000 lines</option>
-</select>
+<div id='html-elemets' style='display: none'>
+  <select id="number-of-lines">
+    <option value=10>Draw 10 lines</option>
+    <option value=100>Draw 100 lines</option>
+    <option value=1000>Draw 1000 lines</option>
+    <option value=10000>Draw 10000 lines</option>
+  </select>
+  <table style='border: none'>
+    <tr><td>Randomizer:</td><td><input type='text' id='time-randomizer' size=5 disabled value=0 />ms</td></tr>
+    <tr><td>Drawing Lines:</td><td><input type='text' id='time-drawing' size=5 disabled value=0 />ms</td></tr>
+    <tr><td>Total:</td><td><input type='text' id='time-total'           size=5 disabled value=0 />ms</td></tr>
+  </table>
+</div>
 </body>
 </html>

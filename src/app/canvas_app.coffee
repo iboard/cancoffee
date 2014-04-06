@@ -36,7 +36,7 @@ class @CanvasApp
 
   run: ->
     @background.draw(@canvas.context)
-    @actor.execute(@canvas)
+    @actor.execute()
 
   initComplete:         -> @initialized == true
   initializeCanvas:     -> new Canvas( @canvas_element, @geometry, @background )

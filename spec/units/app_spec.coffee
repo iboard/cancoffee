@@ -56,4 +56,14 @@ describe "HTML5 Canvas Application", ->
     ($ "#number-of-lines" ).change()
     expect( app.actor.execute ).toHaveBeenCalled()
 
+  it "messures time to spent for randomizing lines", ->
+    app.run()
+    expect( parseInt(($ "#time-randomizer").val()) ).toBeGreaterThan(-1)
 
+  it "messures time to spent for drawing lines", ->
+    app.run()
+    expect( parseInt(($ "#time-drawing").val()) ).toBeGreaterThan(-1)
+
+  it "messures time for a complete run", ->
+    app.run()
+    expect( parseInt(($ "#time-total").val()) ).toBeGreaterThan(-1)
