@@ -1,7 +1,9 @@
+#
+#  Background is responsible to draw the background
+#
 class @Background
 
-  constructor: (_geometry) ->
-    @geometry = _geometry
+  constructor: (@geometry) ->
     @fillStyle = "rgb(10,40,30)"
 
   draw: (context) ->

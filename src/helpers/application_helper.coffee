@@ -1,3 +1,6 @@
+#
+# Generate a random color. Optionally with a random opacity
+#
 @randomColor= (transparent=false) ->
   rgb = []
   rgb.push Math.round( Math.random()*255 ) for col in ['r','g','b']

@@ -1,3 +1,7 @@
+#
+#  Class Geometry is responsible to setup CSS properties
+#  to the the canvas-element on the HTML-page.
+#
 class @Geometry
 
   constructor: (canvas_element) ->

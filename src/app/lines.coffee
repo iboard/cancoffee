@@ -1,3 +1,5 @@
+# A simple line has a start and an end point, a stroke-width,
+# and a color
 class @Line
 
   constructor: (@x0,@y0,@x1,@y1,@width,@color) ->
@@ -10,6 +12,7 @@ class @Line
     canvas.context.lineTo(@x1,@y1)
     canvas.context.stroke()
 
+# A LinesArray generates Lines by calling the given callback n times
 class @LinesArray
 
   constructor: ( numberOfLines, _initLineFunc ) ->
