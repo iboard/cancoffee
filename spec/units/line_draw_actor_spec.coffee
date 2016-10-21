@@ -1,8 +1,11 @@
 describe "Line Draw Actor", ->
 
   actor = null
+  canvas = null
+  geomentry = null
+      
   beforeEach ->
-    actor = new LineDrawActor(null,null)
+    actor = new LineDrawActor(canvas,geomentry)
     for n in [0..9]
       actor.addLine lineFactory(1)
 
