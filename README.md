@@ -16,8 +16,8 @@ Then
 
 You can see a running implementation at
 
-  * [The Application](http://static.iboard.cc/container/cancoffee/public/)
-  * [The Jasime Suite](http://static.iboard.cc/container/cancoffee/spec/suite.html)
+  * [The Application](https://s3.eu-central-1.amazonaws.com/iboard.core/static/cancoffee/public/index.html)
+  * [The Jasime Suite](https://s3.eu-central-1.amazonaws.com/iboard.core/static/cancoffee/spec/suite.html)
 
 
 # The Application
